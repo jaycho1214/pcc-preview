@@ -1,0 +1,34 @@
+.brand {
+    border-radius: 50%;
+}
+
+.icons {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    text-align: center;
+}
+
+.icons li {
+    display: inline-block;
+    margin-left: 1.7em;
+}
+
+.icons a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    transition: color linear 0.2s;
+}
+
+.semester {
+    font-size: 1.7em;
+    color: white;
+}

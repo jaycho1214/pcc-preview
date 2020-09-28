@@ -1,0 +1,13 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.center h2 {
+    margin-bottom: 2em;
+}
