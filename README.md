@@ -21,7 +21,7 @@
 
 It fetches the new schedule **EVERYDAY**
 
-You can early access to next semester schedule by visiting [here](https://github.com/chotravis87/pcc-bots/issues).
+You can early access to next semester schedule by visiting [here](https://pcc-preview.herokuapp.com/).
 
 
 ## Contributing

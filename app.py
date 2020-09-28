@@ -37,11 +37,12 @@ def isnewest(month_, day_):
 @app.route('/')
 def index():
     filename = getfile()
+    header = semester + ' ' + year
     if not isnewest(filename.split('_')[1], filename.split('_')[2]):
         os.remove(os.path.dirname(os.path.abspath(__file__)) + '/' + filename)
         refresh()
         filename = getfile()
-    return render_template('index.html', title="PCC - " ,header=semester + ' ' + year)
+    return render_template('index.html', title="PCC - " + header ,header=header)
 
 @app.route('/about')
 def about():
