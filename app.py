@@ -42,21 +42,11 @@ def index():
         os.remove(os.path.dirname(os.path.abspath(__file__)) + '/' + filename)
         refresh()
         filename = getfile()
-    return render_template('index.html', title="PCC - " + header ,header=header)
+    return render_template('index.html', title="PCC - " + header, header=header)
 
 @app.route('/about')
 def about():
-    filename = getfile()
-    context = {
-        'date': str(month) + '/' + str(day),
-        'year': str(year),
-        'semester': semester
-    }
-    try:
-        context['file_date'] = filename.split('_')[1] + '/' + filename.split('_')[2]
-    except IndexError:
-        context['file_date'] = 'Does not exist'
-    return render_template('about.html', title="PCC - About", context=context, header='About')
+    return render_template('about.html', title="PCC - About", header='About')
 
 @app.route('/preview.html')
 def preview():
