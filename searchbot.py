@@ -45,7 +45,7 @@ class searchbot:
 
   def __init__(self, html=None, file_name=None, year=None, term=None, init=True):
     # URL
-    self._url = 'https://selfservice.pasadena.edu/prod/pw_psearch_sched.p_listthislist'
+    self._url = 'https://ssb-prod.ec.pasadena.edu/PROD/pw_psearch_sched.p_listthislist'
     self.form_data = None
     self.html = None
     self.tr = None
